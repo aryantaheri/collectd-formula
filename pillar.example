@@ -143,3 +143,8 @@ collectd:
           variables:
             var1: value1
             var2: value2
+    exec:
+      user: collectd
+      group: collectd
+      # By default all block devices are used for collectd-smartmon.sh.
+      programs: {'collectd-smartmon.sh': ['sda', 'sdb']}
