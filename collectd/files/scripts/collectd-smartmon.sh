@@ -57,6 +57,8 @@
 #                        Improve docs.
 #                        Add a few metrics to output.
 #                        Re-order & standardise output lines for easier review & updating.
+#   2016-03-09 v0.2.1  - Add SSD metrics.
+#                        Unset variables in each iteration, so next device will only use newly generated variables.
 ###
 
 if [ -z "$*" ]; then
