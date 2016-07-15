@@ -153,7 +153,11 @@
                 'user': 'collectd',
                 'group': 'collectd',
                 'programs': {'collectd-smartmon.sh': salt['partition.get_block_device']()}
+            },
+            'sensors': {
+                'sensors': []
             }
+
         }
     }
 } %}
